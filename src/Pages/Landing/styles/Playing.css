@@ -1,0 +1,134 @@
+.playing-cont {
+  background: linear-gradient(154.94deg, #404040 4.18%, #000000 62.21%);
+  margin-top: 270px;
+  position: relative;
+  opacity: 0;
+}
+.play-coin {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.playing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  padding-inline: 20px;
+  position: relative;
+  height: 700px;
+}
+.playing > img {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.playing-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.playing-flex h1 {
+  font-weight: 500;
+  font-size: 89px;
+}
+.playing-flex h2 {
+  font-weight: 500;
+  font-size: 60px;
+  margin-top: 30px;
+}
+.playing-flex p {
+  font-weight: 700;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 50px;
+}
+.playing-flex .btn-div {
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  z-index: 45;
+}
+.playing-flex .btn-div button {
+  width: 270px;
+}
+.playing-flex .cta-btn {
+  position: relative;
+}
+.playing-flex .cta-btn img {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  transform: translateY(-50%);
+  width: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .playing-cont {
+    isolation: initial;
+  }
+  .playing {
+    position: relative;
+    z-index: 30;
+  }
+  .playing-cont {
+    margin-top: 160px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .playing > img {
+    display: none;
+  }
+  .play-coin {
+    height: 750px;
+    object-fit: contain;
+  }
+  .playing {
+    width: 100%;
+    justify-content: flex-start;
+    height: 450px;
+  }
+  .playing-flex {
+    width: 100%;
+  }
+  .playing-flex h1 br {
+    display: none;
+  }
+  .playing-flex h1 {
+    font-size: 32px;
+  }
+  .playing-flex h2 {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+  .playing-flex p {
+    font-size: 16px;
+    margin-bottom: 45px;
+  }
+  .playing-flex .btn-div {
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+  }
+  .playing-flex .btn-div button {
+    width: 100%;
+    font-size: 16px;
+    max-width: 270px;
+    min-width: 165px;
+    height: 42px;
+  }
+  .playing-flex .cta-btn img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .playing {
+    height: 300px;
+  }
+  .playing-cont > img {
+    height: 550px;
+  }
+}
