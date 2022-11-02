@@ -3,5 +3,8 @@
 copy repo
 then
 
-npm install
+npm install 
+
+and 
+
 npm run dev
