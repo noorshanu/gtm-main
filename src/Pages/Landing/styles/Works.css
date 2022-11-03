@@ -79,10 +79,10 @@
   background-color: #6d93f8;
   position: absolute;
   top: 50%;
-  right: calc(100% + 18px);
-  opacity: 0.3;
+  right: calc(100% + 19px);
+  opacity: 0.2;
   width: 1px;
-  height: calc(100% + 90px);
+  height: calc(100% + 89px);
 }
 .right-bottom-line {
   right: initial;
